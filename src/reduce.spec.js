@@ -3,7 +3,7 @@ const add = require('./add');
 
 describe('Reduce', () => {
 
-    it('Reduce returns undefined when empty array, add as reducer function and no initial value are given with ', () => {
+    it('Reduce returns undefined when empty array, add as reducer function and no initial value are given', () => {
         expect(reduce([], add)).toEqual(undefined);
     });
 
