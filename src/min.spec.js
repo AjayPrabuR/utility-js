@@ -10,4 +10,12 @@ describe('Min', () => {
         expect(min([])).toEqual(undefined);
     });
 
+    it('Min of non-empty array with mix of negative numbers is minimum element in the array', () => {
+        expect(min([-1,2,-3,4,-5])).toEqual(-5);
+    });
+
+    it('Min of non-empty array with only negative numbers is minimum element in the array', () => {
+        expect(min([-1,-2,-3,-4,-5])).toEqual(-5);
+    });
+
 })
